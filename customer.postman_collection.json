@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "d85c3633-2443-4480-a0eb-6ec0c6455d02",
+		"name": "customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "select all customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "select by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers/ALFKI",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"ALFKI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customerID",
+							"value": "janu",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "micro",
+							"type": "text"
+						},
+						{
+							"key": "contactName",
+							"value": "tel-u",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
